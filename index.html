@@ -15,6 +15,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Joeri Martens - Work in progress</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script>
   if (window.location.hostname === "www.joerimartens.com") {
     window.location.href = "https://joerimartens.com" + window.location.pathname;
@@ -50,14 +51,14 @@
       max-width: 500px;
     }
     .socials a {
-      margin: 0 0.5rem;
-      color: #2563eb;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    .socials a:hover {
-      text-decoration: underline;
-    }
+  margin: 0 0.5rem;
+  color: #2563eb;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.socials a:hover {
+  color: #1e40af;
+}
     form {
       margin-top: 2rem;
       display: flex;
@@ -90,10 +91,16 @@
   <h1>Joeri Martens</h1>
   <p>Trying out something new. Interested in technology.</p>
   <div class="socials">
-    <a href="https://www.linkedin.com/in/joeri-martens-46a16467/" target="_blank">LinkedIn</a>
-    <a href="https://www.instagram.com/joerimartens/" target="_blank">Instagram</a>
-    <a href="https://www.youtube.com/@Macdude2" target="_blank">YouTube</a>
-  </div>
+  <a href="https://www.linkedin.com/in/joeri-martens-46a16467/" target="_blank" aria-label="LinkedIn">
+    <i class="fab fa-linkedin fa-2x"></i>
+  </a>
+  <a href="https://www.instagram.com/joerimartens/" target="_blank" aria-label="Instagram">
+    <i class="fab fa-instagram fa-2x"></i>
+  </a>
+  <a href="https://www.youtube.com/@Macdude2" target="_blank" aria-label="YouTube">
+    <i class="fab fa-youtube fa-2x"></i>
+  </a>
+</div>
 
   <form action="https://formspree.io/f/mvgkeklg" method="POST">
     <input type="text" name="name" placeholder="Je naam" required>
